@@ -1,0 +1,114 @@
+/* ===== CSS RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== ROOT VARIABLES (from screenshots) ===== */
+:root {
+  --black: #111111;
+  --gray-dark: #6b7280;
+  --gray-light: #9ca3af;
+  --border: #e5e7eb;
+  --bg: #ffffff;
+  --btn-bg: #111111;
+  --btn-text: #ffffff;
+  --radius: 14px;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+/* ===== GLOBAL LAYOUT ===== */
+main {
+  width: 100%;
+}
+
+/* ===== SECTION SPACING (VERY IMPORTANT) ===== */
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p {
+  color: var(--gray-dark);
+  font-size: 16px;
+  max-width: 600px;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+button.secondary {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--black);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 34px;
+  }
+}

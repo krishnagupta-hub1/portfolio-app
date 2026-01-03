@@ -1,0 +1,75 @@
+.hero {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Avatar */
+.hero-avatar {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.hero-avatar img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Green badge */
+.hero-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #22c55e;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Headline */
+.hero-title {
+  margin-bottom: 20px;
+}
+
+.hero-title span {
+  color: var(--gray-light);
+  font-weight: 600;
+}
+
+/* Description */
+.hero-description {
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ===== MOBILE HERO ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero-avatar img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-description {
+    padding: 0 10px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,91 @@
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  background-color: #fff;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+.logo-text {
+  color: var(--black);
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--gray-dark);
+  font-size: 14px;
+}
+
+.navbar-links a:hover {
+  color: var(--black);
+}
+
+/* Button already styled globally */
+.navbar-links button {
+  margin-left: 10px;
+}
+
+.navbar-links button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: var(--gray-dark);
+  cursor: pointer;
+}
+
+.navbar-links button:hover {
+  color: var(--black);
+}
+
+/* ===== MOBILE NAVBAR ===== */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .navbar-links button.primary {
+    width: 100%;
+  }
+}
